@@ -1,0 +1,30 @@
+/### change
+-$title     = "Sélection spéciale SOLDES chez L'Atelier de Lucie !"
+-$txtheader = "SOLDES chez L'Atelier de Lucie !<br />Retrouvez tous nos produits loisirs créatifs, tricot, canevas, point de croix, mercerie et accessoires à prix barrés !<br />Profitez-en vite !"
+/### do not change
+-$mirorLink = "https://latelierdelucie.com/NewsLettersID/FR/#{$miror}/index.htm"
+-$url       ="https://www.latelierdelucie.fr/fr/";$urlCat ="https://www.latelierdelucie.fr/cat/fr/"
+-$index     ="index.aspx"
+-$srcmedium =["?utm_source=NL&utm_medium=email","&utm_source=NL&utm_medium=email"]
+-$content   =["&utm_content=","url","garantie","livraison","paiement","contact","desabo"]
+/ compact
+-rayon  = "boutique/rayon_evenement.aspx?urlLangue=fr&nbp=99&pg=0&evenement_id="
+-urlRay = "#{$url}#{rayon}#{$IDray[:fr]}#{$srcmedium[1]}#{$content[0]}"
+-pdt    = ["0", ""]
+
+/### content link ["logo", "accroche", "pdt", "prix", "bouton" ]
+- $s1_logo  = "#{$url}#{$index}#{$srcmedium[0]}#{$content[0]}logo#{$campaign}"
+/ ### TO_CHANGE
+- $s3_accroche     = "#{$url}#{rayon}#{$IDray[:fr]}#{$srcmedium[1]}#{$content[0]}corps#{$campaign}"
+- $s4c1_60pct      = "#{$url}#{rayon}#{$IDray[:fr]}#{$srcmedium[1]}#{$content[0]}corps#{$campaign}"
+- $s4c2_pctUnivers = "#{$url}#{rayon}#{$IDray[:fr]}#{$srcmedium[1]}#{$content[0]}corps#{$campaign}"
+- $s5_btn          = "#{$url}#{rayon}#{$IDray[:fr]}#{$srcmedium[1]}#{$content[0]}bouton#{$campaign}"
+
+/ alt + title
+- $alt_s3_accroche     = "Découvrez vite notre sélection SOLDES"
+- $alt_s4c1_60pct      = "Jusqu’à -50%"
+- $alt_s4c2_pctUnivers = "Loisirs créatifs, broderie, mercerie, accessoires"
+- $alt_s5_btn          = "Accédez à la vente"
+
+/ alt NE PAS CHANGER
+- $alt_logo            = "L'Atelier de Lucie"

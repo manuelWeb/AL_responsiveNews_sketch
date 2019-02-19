@@ -1,0 +1,25 @@
+-univ = ["0", "Canevas", "Loisirs Créatifs", "Tricot & crochet", "Broderie & point compté", "Toiles & fils", "Mercerie"]
+-univItem = ["0", "canevas", "loisirs-creatifs", "tricot-crochet", "broderie-point-compte", "toiles-fils", "mercerie"]
+tr
+  td
+    img src==(($abspath == true ? $srcAbs : $srcRel)+"s2_navTop.png") alt=""
+tr
+  td
+    table border="0" cellpadding="0" cellspacing="0" width="620"
+      tr
+        - for i in 1...7
+          -if i == 1
+            td width="1" bgcolor="#FFFFFF"
+          -else
+            td valign="middle" align="center" width="1" bgcolor="#674FA0"
+              table border==($tabborder0)
+                tr
+                  td width="1" height="16" bgcolor="#FFFFFF"
+          td.tac.cel-hov.va-m.pr5.pl5 align="center" valign="middle" bgcolor="#674FA0" height="32"
+            a.univ.tdn.tdn-hov.db href==($url+univItem[i]+"/Univers.html#{$srcmedium[0]}#{$content[0]}nav_#{univItem[i]}#{$campaign}") target="_blank" style="line-height: 32px; "
+              == univ[i]
+          -if i == 6
+            td width="1" bgcolor="#FFFFFF"
+tr
+  td
+    img src==(($abspath == true ? $srcAbs : $srcRel)+"s2_navBottom.png") alt=""
