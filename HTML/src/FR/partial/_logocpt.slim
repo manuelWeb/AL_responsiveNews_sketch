@@ -1,13 +1,17 @@
 tr
   td.mob_d_b.pdb16 valign="middle"
-    table.mobile_320 border="0" cellpadding="0" cellspacing="0"
+    table.mobile_320 width="100%" border="0" cellpadding="0" cellspacing="0"
       tr
         / desk device : padding-left: 4 column + 4 gutter
         / (208 pad + 196 logo = )
-        td.mob_nopd align="left" style="padding-left: #{$column*4+$gutter*4}px;"
-          a href==("#{$url}#{$index}#{$goTk[:p1]}#{$utmcont[0]}#{$campaign}") target="_blank"
-           img src==(($abspath == true ? $srcAbs : $srcRel)+"s1c1_logo.png") alt=""
+        // style="padding-left: #{$column*4+$gutter*4}px;"
+        td.mob_nopd.mob_d_b align="right" widt="#{$column*9+$gutter*9}" style="padding-right: 50px;"
+          a.mob_d_b href==("#{$url}#{$index}#{$goTk[:p1]}#{$utmcont[0]}#{$campaign}") target="_blank"
+            // soit on passe l'image mobile en dib ou alors m0auto
+            img.mob_m0auto src==(($abspath == true ? $srcAbs : $srcRel)+"s1c1_logo.png") width="224" alt=""
+
         / desk device : ( 116 pad + 92 cpt = 208)
-        td.mob_nopd width==($column*2+$gutter*1) align="left" style="padding-left: #{$column*2+$gutter*3}px;"
+        //  style="padding-left: #{$column*2+$gutter*3}px;"
+        td.mob_nopd.mob_d_b.mob_320.mob_tar width==($column*3+$gutter*2) align="left"
           a href==("#{$url}#{$cpt}#{$goTk[:p1]}#{$utmcont[1]}#{$campaign}") target="_blank"
-           img src==(($abspath == true ? $srcAbs : $srcRel)+"s1c2_cpt.png") alt=""
+           img.mob_dib src==(($abspath == true ? $srcAbs : $srcRel)+"s1c2_cpt.png") width="93" alt=""
