@@ -7,10 +7,10 @@ tr
     img.centw src==(($abspath == true ? $srcAbs : $srcRel)+"s2_navTop.png") width="612" alt=""
 tr
   td
-    table border="0" cellpadding="0" cellspacing="0" width="100%"
+    table.mobile_320 width="100%" border="0" cellpadding="0" cellspacing="0"
       tr
         - for j in 0...2
-          td.mob_pdb_4.mob_d_b
+          td.mob_d_b valign="middle"
             table.mobile_320 border="0" cellpadding="0" cellspacing="0" width="100%"
               tr
                 - if j == 0
@@ -18,6 +18,17 @@ tr
                     td.nav.tac.cel-hov align="center" valign="middle" bgcolor="#674FA0" height="44"
                       a.univ.tdn.tdn-hov.db href==($url+univItem[i]+"/Univers.html?&utm_nav_#{univItem[i]}#{$campaign}") target="_blank"
                         == univ[i]+"_#{j.to_i}"
+                    td style="line-height: 0; border-collapse: collapse;" bgcolor="#674FA0"
+                      table border="0" cellpadding="0" cellspacing="0"
+                        tr
+                          - if i < 2
+                            td width="2" height="28" bgcolor="#ffffff"
+                              / | "#{i}"
+                          - else
+                            td.mob_d_none width="2" height="28" bgcolor="#ffffff"
+                              / | "#{i}"
+                  / tr
+                  /   td height="2"
                 - if j == 1
                   - for i in 3...6
                     td.nav.tac.cel-hov align="center" valign="middle" bgcolor="#674FA0" height="44"
