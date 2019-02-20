@@ -14,7 +14,7 @@ var gulp           = require('gulp'),
     using          = require('gulp-using'),
     rm             = require('gulp-rimraf'),
     rimraf         = require('rimraf'),
-    prettify       = require('gulp-html-prettify'),
+    prettify       = require('gulp-prettify'),
     changed        = require('gulp-changed');
     const notifier = require('node-notifier');
 // src & output
