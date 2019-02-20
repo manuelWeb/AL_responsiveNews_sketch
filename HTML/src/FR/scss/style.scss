@@ -10,7 +10,9 @@
 .dib {
   display: inline-block;
 }
-.mob_d { display: none; }
+.mob_d {
+  display: none;
+}
 .m0auto {
   margin: 0 auto;
 }
@@ -119,8 +121,12 @@ td {
   font-style: italic;
   // background-color: #674FA0; -> cf bgcolor in html to keep hover free to use
 }
-.tdn-hov:hover {text-decoration: underline !important; }
-.cel-hov:hover {background-color: #E97B0A; }
+.tdn-hov:hover {
+  text-decoration: underline !important;
+}
+.cel-hov:hover {
+  background-color: #e97b0a;
+}
 .nav a {
   line-height: 16px;
   color: #ffffff;
