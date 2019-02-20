@@ -15,32 +15,28 @@ tr
               tr
                 - if j == 0
                   - for i in 0...3
-                    td.nav.tac.cel-hov align="center" valign="middle" bgcolor="#674FA0" height="44"
-                      a.univ.tdn.tdn-hov.db href==($url+univItem[i]+"/Univers.html?&utm_nav_#{univItem[i]}#{$campaign}") target="_blank"
-                        / == univ[i]+"_#{j.to_i}"
+                    td.nav.mob_33.tac.cel-hov class==((i < 3 == true ? "bdb2" : "")) align="center" valign="middle" bgcolor="#674FA0" height="44"
+                      a.univ.tdn.tdn-hov.db class==((i < 2 == true ? "bdr2" : "")) href==($url+univItem[i]+"/Univers.html?&utm_nav_#{univItem[i]}#{$campaign}") target="_blank"
                         == univ[i]
-                    td bgcolor="#674FA0"
+                    // border physique
+                    td.mob_d_none bgcolor="#674FA0"
                       table border="0" cellpadding="0" cellspacing="0"
                         tr
                           - if i < 2
-                            td width="2" height="28" bgcolor="#ffffff"
-                              / | "#{i}"
+                            td.mob_d_none width="2" height="28" bgcolor="#ffffff"
                           - else
                             td.mob_d_none width="2" height="28" bgcolor="#ffffff"
-                              / | "#{i}"
 
                 - if j == 1
                   - for i in 3...6
-                    td.nav.tac.cel-hov align="center" valign="middle" bgcolor="#674FA0" height="44"
-                      a.univ.tdn.tdn-hov.db href==($url+univItem[i]+"/Univers.html?&utm_nav_#{univItem[i]}#{$campaign}") target="_blank"
-                        / == univ[i]+"_#{j.to_i}"
+                    td.nav.mob_33.tac.cel-hov align="center" valign="middle" bgcolor="#674FA0" height="44"
+                      a.univ.tdn.tdn-hov.db class==((i < 5 == true ? "bdr2" : "")) href==($url+univItem[i]+"/Univers.html?&utm_nav_#{univItem[i]}#{$campaign}") target="_blank"
                         == univ[i]
                     - if i < 5
-                      td bgcolor="#674FA0"
+                      td.mob_d_none bgcolor="#674FA0"
                         table border="0" cellpadding="0" cellspacing="0"
                           tr
-                            td width="2" height="28" bgcolor="#ffffff"
-                    /         td width="2" height="28" bgcolor="#ffffff"
+                            td.mob_d_none width="2" height="28" bgcolor="#ffffff"
 
 tr
   td
