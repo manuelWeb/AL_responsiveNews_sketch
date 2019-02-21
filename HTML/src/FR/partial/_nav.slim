@@ -10,35 +10,36 @@ tr
     table.mobile_320 width="100%" border="0" cellpadding="0" cellspacing="0"
       tr
         - for j in 0..2
-          td.mob_d_b valign="middle"
-            table.mobile_320 border="0" cellpadding="0" cellspacing="0" width="100%"
-              tr
-                - if j == 0
-                  - for i in 0..2
-                    td.nav.mob_33.tac.cel-hov class==((i < 3 == true ? "bdb2" : "")) align="center" valign="middle" bgcolor="#674FA0" height="44"
-                      a.univ.tdn.tdn-hov.db class==((i < 2 == true ? "bdr2" : "")) href==($url+univItem[i]+"/Univers.html?&utm_nav_#{univItem[i]}#{$campaign}") target="_blank"
-                        == univ[i]
-                    // border physique
-                    td.mob_d_none bgcolor="#674FA0"
-                      table border="0" cellpadding="0" cellspacing="0"
-                        tr
-                          - if i < 2
-                            td.mob_d_none width="2" height="28" bgcolor="#ffffff"
-                          - else
-                            td.mob_d_none width="2" height="28" bgcolor="#ffffff"
-
-                - if j == 1
-                  - for i in 3..5
-                    td.nav.mob_33.tac.cel-hov align="center" valign="middle" bgcolor="#674FA0" height="44"
-                      a.univ.tdn.tdn-hov.db class==((i < 5 == true ? "bdr2" : "")) href==($url+univItem[i]+"/Univers.html?&utm_nav_#{univItem[i]}#{$campaign}") target="_blank"
-                        == univ[i]
-                    - if i < 5
+          - if j < 2
+            td.mob_d_b valign="middle"
+              table.mobile_320 border="0" cellpadding="0" cellspacing="0" width="100%"
+                tr
+                  - if j == 0
+                    - for i in 0..2
+                      td.nav.mob_33.tac.cel-hov class==((i < 3 == true ? "bdb2" : "")) align="center" valign="middle" bgcolor="#674FA0" height="44"
+                        a.univ.tdn.tdn-hov.db class==((i < 2 == true ? "bdr2" : "")) href==($url+univItem[i]+"/Univers.html?&utm_nav_#{univItem[i]}#{$campaign}") target="_blank"
+                          == univ[i]
+                      // border physique
                       td.mob_d_none bgcolor="#674FA0"
                         table border="0" cellpadding="0" cellspacing="0"
                           tr
-                            td.mob_d_none width="2" height="28" bgcolor="#ffffff"
-                - else
-                  td.none
+                            - if i < 2
+                              td.mob_d_none width="2" height="28" bgcolor="#ffffff"
+                            - else
+                              td.mob_d_none width="2" height="28" bgcolor="#ffffff"
+
+                  - if j == 1
+                    - for i in 3..5
+                      td.nav.mob_33.tac.cel-hov align="center" valign="middle" bgcolor="#674FA0" height="44"
+                        a.univ.tdn.tdn-hov.db class==((i < 5 == true ? "bdr2" : "")) href==($url+univItem[i]+"/Univers.html?&utm_nav_#{univItem[i]}#{$campaign}") target="_blank"
+                          == univ[i]
+                      - if i < 5
+                        td.mob_d_none bgcolor="#674FA0"
+                          table border="0" cellpadding="0" cellspacing="0"
+                            tr
+                              td.mob_d_none width="2" height="28" bgcolor="#ffffff"
+                / - else
+                /   td.none style="width: 0"
 
 tr
   td
