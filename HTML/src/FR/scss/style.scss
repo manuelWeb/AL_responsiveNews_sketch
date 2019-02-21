@@ -1,3 +1,4 @@
+.lh0 {line-height: 0;}
 .vam {
   vertical-align: middle;
 }
@@ -10,7 +11,7 @@
 .dib {
   display: inline-block;
 }
-.mob_d {
+.desk_dn {
   display: none;
 }
 .m0auto {
@@ -31,6 +32,9 @@
 }
 .fz16 {
   font-size: 16px;
+}
+.fz18 {
+  font-size: 18px;
 }
 .cf {
   color: #ffffff;
@@ -77,18 +81,15 @@ td {
   background-color: #eeeeee;
 }
 // padding
-.pdt6 {
-  @include pdt(6);
-}
+.pdt4 { @include pdt(4); }
+.pdt6 { @include pdt(6); }
 .pdt10 {
   @include pdt(10);
 }
 .pdt16 {
   @include pdt(16);
 }
-.pdt24 {
-  @include pdt(24);
-}
+.pdt24 { @include pdt(24); }
 .pdr10 {
   @include pdr(10);
 }
