@@ -1,3 +1,6 @@
+$primary: #71439A;
+$ff1: Verdana, 'Geneva', sans-serif;
+$ff2: Georgia, 'Times New Roman', Times, serif;
 .lh0 {line-height: 0;}
 .vam {
   vertical-align: middle;
@@ -83,34 +86,16 @@ td {
 // padding
 .pdt4 { @include pdt(4); }
 .pdt6 { @include pdt(6); }
-.pdt10 {
-  @include pdt(10);
-}
-.pdt16 {
-  @include pdt(16);
-}
+.pdt10 { @include pdt(10); }
+.pdt16 { @include pdt(16); }
 .pdt24 { @include pdt(24); }
-.pdr10 {
-  @include pdr(10);
-}
-.pdr24 {
-  @include pdr(24);
-}
-.pdb6 {
-  @include pdb(6);
-}
-.pdb12 {
-  @include pdb(12);
-}
-.pdb16 {
-  @include pdb(16);
-}
-.pdl10 {
-  @include pdl(10);
-}
-.pdl24 {
-  @include pdl(24);
-}
+.pdr10 { @include pdr(10); }
+.pdr24 { @include pdr(24); }
+.pdb6 { @include pdb(6); }
+.pdb12 { @include pdb(12); }
+.pdb16 { @include pdb(16); }
+.pdl10 { @include pdl(10); }
+.pdl24 { @include pdl(24); }
 
 // navigation &:hover
 .nav {
@@ -118,7 +103,7 @@ td {
   line-height: normal;
   font-size: 16px;
   font-weight: normal;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: $ff2;
   font-style: italic;
   // background-color: #674FA0; -> cf bgcolor in html to keep hover free to use
 }
@@ -144,12 +129,17 @@ td {
   color: #c70082;
 }
 .accTxt {
-  line-height: 24px;
+  line-height: 20px;
   font-size: 16px;
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   color: #444544;
+  b {
+    font-weight: bold;
+    color: $primary;
+  }
 }
 .lib {
+  padding-bottom: 8px;
   font-size: 16px;
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   color: #444444;
@@ -159,13 +149,29 @@ td {
   }
 }
 .price {
+  padding: 6px 12px;
   font-size: 21px;
   font-weight: bold;
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  color: #e1134c;
+  color: $primary;
+  border-radius: 6px;
+  background-color: #FBB600;
   a {
-    color: #e1134c;
+    color: $primary;
     text-decoration: none;
+  }
+}
+// table rassurance
+.trassur {
+  background-color: $primary;
+  .txt {
+    font-family: $ff1;
+    font-size: 16px;
+    font-weight: 100;
+    color: #ffffff;
+    .small {
+      font-size: 10px;
+    }
   }
 }
 .rassur {

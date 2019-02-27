@@ -11,6 +11,8 @@ table.mobile_320 width="636" border="0" cellpadding="0" cellspacing="0" align="c
                   table border="0" cellpadding="0" cellspacing="0"
                     tr
                       td.pdb16.ffRobLight.fz30.color-prim
+                        | Merci pour votre visite :)
+                        br
                         | Votre panier vous attend !
                         / img.cent src==(($abspath == true ? $srcAbs : $srcRel)+"s3c1s1_accTitle.png") alt=""
                     tr
@@ -18,13 +20,19 @@ table.mobile_320 width="636" border="0" cellpadding="0" cellspacing="0" align="c
                         / span==$putLib[0]
                         p.accTxt align="left"
                           b
-                            | Bonjour &lt;Mme | Mr #Unnomsuperlong&gt;,<br />
+                            | Bonjour &lt;Mme | Mr #Unnomsuperlong&gt;,
+                            br
+                            br
                           | Vous avez récemment visité notre site et créé votre panier sur
                           a href==("#{$url}#{$index}#{$goTk[:p1]}#{$utmcont[11]}#{$campaign}") target="_blank"
-                            | www.tempsl.fr
-                          | .<br />Celui-ci a été sauvegardé pour faciliter votre commande. Vous pouvez le consulter puis valider votre panier. Il reste accessible durant quelques jours seulement !<br />À tout de suite sur
+                            == $objso["url"]["fr"]
+                          br
+                          | <br />Celui-ci a été sauvegardé pour faciliter votre commande. Vous pouvez le consulter puis valider votre panier. Il reste accessible durant quelques jours seulement !
+                          br
+                          br
+                          | À tout de suite sur
                           a href==("#{$url}#{$index}#{$goTk[:p1]}#{$utmcont[11]}#{$campaign}") target="_blank"
-                            | www.tempsl.fr
+                            == $objso["url"]["fr"]
                           |  !
                     tr
                       td.mob_tal align="center"

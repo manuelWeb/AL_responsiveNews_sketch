@@ -2,9 +2,9 @@
 -$date = "0917"
 -$campagne = "relance_panier"
 
--$url = "https://www.latelierdelucie.fr/fr/"
+-$url = "#{$objso["url"]["fr"]}/fr/"
 / lien header miroir "version en ligne"
--$link_header = "https://latelierdelucie.com/Newsletters/miroir/Relance_panier_#{$date}/FR/index.htm"
+-$link_header = "https://#{$objso["brand"]["url"]}/Newsletters/miroir/Relance_panier_#{$date}/FR/index.htm"
 / liens produits fin url dyn
 -$link = ["0", "#{$url}x/x/x/"]
 / index
@@ -12,7 +12,7 @@
 -$cpt      = "compte_client/compte-perso.aspx"
 -$panier   = "commande/panier.aspx"
 -$reassu   = ["achat_confiance/", "garanties.aspx", "informations-livraison.aspx", "paiement-securise.aspx", "garanties.aspx", ]
--$lcontact = "latelierdelucie_et_vous/contact.aspx"
+-$lcontact = "#{$objso["brand"]["contact"]}/contact.aspx"
 -$ldesabo  = "animation/DesinscriptionNewsletter.aspx"
 
 / tracking google

@@ -11,3 +11,5 @@ Il manque :
 - des espaces pour plus de lisibilité.
 
 Le texte de la pige Balsamik dans le dossier Temps L me parait plus fluide.
+
+<img src="medias/img_retours/pigeBalsamik.png" alt="">
