@@ -1,5 +1,8 @@
 $primary: #71439A;
-$ff1: Verdana, 'Geneva', sans-serif;
+$ff1: Verdana, 'Geneva', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$ff1_1: 'Roboto', Arial, 'Helvetica Neue', sans-serif !important;
+// $ff1_1: Arial, 'Helvetica Neue', sans-serif;
+$ff1_2: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 $ff2: Georgia, 'Times New Roman', Times, serif;
 .lh0 {line-height: 0;}
 .vam {
@@ -90,8 +93,10 @@ td {
 .pdt16 { @include pdt(16); }
 .pdt24 { @include pdt(24); }
 .pdr10 { @include pdr(10); }
+.pdl10 { @include pdl(10); }
 .pdr24 { @include pdr(24); }
 .pdb6 { @include pdb(6); }
+.pdb8 { @include pdb(8); }
 .pdb12 { @include pdb(12); }
 .pdb16 { @include pdb(16); }
 .pdl10 { @include pdl(10); }
@@ -119,8 +124,8 @@ td {
   text-decoration: none;
 }
 .ffRobLight {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+  font-family: $ff1_1;
+  font-weight: 300;
 }
 .fz30 {
   font-size: 30px;
@@ -131,7 +136,7 @@ td {
 .accTxt {
   line-height: 20px;
   font-size: 16px;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: $ff1_2;
   color: #444544;
   b {
     font-weight: bold;
@@ -139,9 +144,8 @@ td {
   }
 }
 .lib {
-  padding-bottom: 8px;
   font-size: 16px;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: $ff1;
   color: #444444;
   a {
     color: #444444;
@@ -152,7 +156,7 @@ td {
   padding: 6px 12px;
   font-size: 21px;
   font-weight: bold;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: $ff1_2;
   color: $primary;
   border-radius: 6px;
   background-color: #FBB600;
@@ -177,7 +181,7 @@ td {
 .rassur {
   font-size: 12px;
   font-weight: bold;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: $ff1;
   color: #212121;
   text-align: center;
 }

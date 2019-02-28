@@ -2,10 +2,10 @@ table.mobile_320 width="636" border="0" cellpadding="0" cellspacing="0" align="c
   tr
     td align="center" style="margin: 0; padding-top: 5px; padding-bottom: 5px;"
       p.fz12 align="center"
-        ==($header_txt1)
+        == ($objso["head_doc"]["fr"][0])
         br
         span style="font-family: Verdana, Geneva, sans-serif; font-size: 10px; color: #333333; margin: 0;"
-          ==($header_txt2[0])
-          a href==($link_header) target="_blank"
+          ==($objso["head_doc"]["fr"][1])
+          a href==($link_head) target="_blank"
             strong
-              ==($header_txt2[1])
+              ==($objso["head_doc"]["fr"][2])
