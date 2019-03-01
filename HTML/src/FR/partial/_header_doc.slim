@@ -1,17 +1,16 @@
+/ - $tab0ctr = { tag: 'table', border: '0', cellpadding: '0', cellspacing: '0', align: "center" }
 ruby:
   def tab0
-    @gen_attr ? {
+    $tab0ctr ? {
       tag: 'table',
       border: '0', cellpadding: '0', cellspacing: '0',
       align: "center"
       } : {}
   end
-- @gen_attr = true
-/ - gen_attr = { :border => 0, :cellpadding => 0, :cellspacing => 0, :align => "center"}
-- $tab0 =$objso["layout"]["tb_bacc"]
-/ table.m0auto.mobile_320 width="636" border="0" cellpadding="0" cellspacing="0" align="center"
-/ table.m0auto.mobile_320 width="636"
-*tab0 class="m0auto mobile_320" width="636"
+- $tab0ctr = true
+
+/ table class="m0auto mobile_320" width="636"
+*tab0 class="m0auto mobile_320" width="636___"
   tr
     td.lh16.pdt4.pdb4 align="center"
       p.fz12.ff1 align="center"
@@ -22,3 +21,4 @@ ruby:
           a.tdu href==($link_head) target="_blank"
             strong
               ==($objso["head_doc"]["fr"][2])
+

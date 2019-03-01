@@ -2,3 +2,21 @@
 -require 'json'
 -file = File.read('source.json')
 -$objso = JSON.parse(file)
+
+/ Ruby dynamic tag and attribut
+
+/ Slim::Engine.set_options shortcut: {'@' => {attr: 'role'}, '#' => {attr: 'id'}, '.' => {attr: 'class'}}
+
+/ ruby:
+/   class Tag
+/     def tab0
+/       $tab0ctr ? {
+/         tag: 'table',
+/         border: '0', cellpadding: '0', cellspacing: '0',
+/         align: "center"
+/         } : {}
+/     end
+/   end
+/ - $tab0ctr = true
+
+/ Tag = Tag.new
