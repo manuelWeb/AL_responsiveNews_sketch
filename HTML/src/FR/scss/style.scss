@@ -1,107 +1,82 @@
 $primary: #71439A;
 $ff1: Verdana, 'Geneva', Arial, 'Helvetica Neue', Helvetica, sans-serif;
-$ff1_1: 'Roboto', Arial, 'Helvetica Neue', sans-serif !important;
-// $ff1_1: Arial, 'Helvetica Neue', sans-serif;
+$ff1_1: 'Roboto', Arial, 'Helvetica Neue', sans-serif;
 $ff1_2: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 $ff2: Georgia, 'Times New Roman', Times, serif;
-.lh0 {line-height: 0;}
-.lh16 {line-height: 16px;}
-.vam {
-  vertical-align: middle;
-}
-.tac {
-  text-align: center;
-}
-.db {
-  display: block;
-}
-.dib {
-  display: inline-block;
-}
-.desk_dn {
-  display: none;
-}
-.m0auto {
-  margin: 0 auto;
-}
 
-.fwb {
-  font-weight: bold;
-}
-.bds-3 {
-  border-radius: 3px;
-}
-.fz12 {
-  font-size: 12px;
-}
-.fz14 {
-  font-size: 14px;
-}
-.fz16 {
-  font-size: 16px;
-}
-.fz18 {
-  font-size: 18px;
-}
-.cf {
-  color: #ffffff;
-}
-.tdn {
-  text-decoration: none;
-}
-td {
-  p {
-    margin: 0;
-    padding: 0;
-    line-height: normal;
-    font-family: Verdana, Geneva, sans-serif;
-  }
-  img {
-    display: block;
-    line-height: normal;
-  }
-}
-.nav-ba {
-  @extend .nav;
-  font-weight: bold;
-  background-color: #ffff00;
-}
-@mixin pdt($val) {
-  padding-top: $val + px;
-}
-@mixin pdr($val) {
-  padding-right: $val + px;
-}
-@mixin pdb($val) {
-  padding-bottom: $val + px;
-}
-@mixin pdl($val) {
-  padding-left: $val + px;
-}
-.bgcf {
-  background-color: #ffffff;
-}
-.bgcc {
-  background-color: #cccccc;
-}
-.bgce {
-  background-color: #eeeeee;
-}
-// padding
+// magic mixin for padding
+@mixin pdt($val) { padding-top: $val + px; }
+@mixin pdr($val) { padding-right: $val + px; }
+@mixin pdb($val) { padding-bottom: $val + px; }
+@mixin pdl($val) { padding-left: $val + px; }
 .pdt4 { @include pdt(4); }
 .pdt6 { @include pdt(6); }
 .pdt10 { @include pdt(10); }
 .pdt16 { @include pdt(16); }
 .pdt24 { @include pdt(24); }
 .pdr10 { @include pdr(10); }
-.pdl10 { @include pdl(10); }
 .pdr24 { @include pdr(24); }
+.pdb4 { @include pdb(4); }
 .pdb6 { @include pdb(6); }
 .pdb8 { @include pdb(8); }
 .pdb12 { @include pdb(12); }
 .pdb16 { @include pdb(16); }
 .pdl10 { @include pdl(10); }
 .pdl24 { @include pdl(24); }
+
+// basic OCSS
+.lh0 {line-height: 0;}
+.lh16 {line-height: 16px;}
+
+.vam { vertical-align: middle; }
+.tac { text-align: center; }
+
+.db { display: block; }
+.dib { display: inline-block; }
+.desk_dn { display: none; }
+.m0auto { margin: 0 auto; }
+
+
+.ff1 {font-family: $ff1;}
+.ff1_1 {font-family: $ff1_1;}
+.ff1_2 {font-family: $ff1_2;}
+.ff2 {font-family: $ff2;}
+.fwb { font-weight: bold; }
+.fz10 { font-size: 10px; }
+.fz12 { font-size: 12px; }
+.fz14 { font-size: 14px; }
+.fz16 { font-size: 16px; }
+.fz18 { font-size: 18px; }
+
+.tdn { text-decoration: none; }
+.tdu { text-decoration: underline; }
+
+.bds-3 { border-radius: 3px; }
+
+.cf { color: #ffffff; }
+
+.bgcf { background-color: #ffffff; }
+.bgcc { background-color: #cccccc; }
+.bgce { background-color: #eeeeee; }
+
+
+td {
+  p {
+    margin: 0;
+    padding: 0;
+    font-family: $ff1;
+  }
+  img {
+    display: block;
+    line-height: normal;
+  }
+}
+
+.nav-ba {
+  @extend .nav;
+  font-weight: bold;
+  background-color: #ffff00;
+}
 
 // navigation &:hover
 .nav {
@@ -187,7 +162,7 @@ td {
   text-align: center;
 }
 .legal {
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: $ff1;
   font-size: 11px;
   color: #555555;
   margin: 0;

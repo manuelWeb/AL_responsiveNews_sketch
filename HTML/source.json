@@ -32,6 +32,8 @@
     "uk": "1764"
   },
   "layout": {
+    "tb_bacc": "border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\"",
+    "tb_bacc_": "0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\"",
     "addLogo" : true,
     "addPromo": false,
     "topShad" : false,
