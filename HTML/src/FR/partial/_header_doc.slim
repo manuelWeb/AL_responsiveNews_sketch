@@ -1,9 +1,9 @@
 / table class="m0auto mobile_320" width="636"
 /! tab>tr>td zone de test à supp pour production
-*$tab.c0fullw
-  tr
-    *$td.ac
-      == $brand.name
+/ *$tab.c0fullw
+/   tr
+/     *$td.ac
+/       == $brand.name + ' www.' + $brand.url + ' contact:' + $brand.contact
 
 *$tab.c0 class="m0auto mobile_320" width="636"
   tr
@@ -12,8 +12,7 @@
         == ($objso["head_doc"]["fr"][0])
         br
         span.fz10
-          ==($objso["head_doc"]["fr"][1])
+          ==($objso["head_doc"]["fr"][1])+' '
           a.tdu href==($link_head) target="_blank"
             strong
-              ==($objso["head_doc"]["fr"][2])
-
+              == "\'" + ($objso["head_doc"]["fr"][2]) + "\'"

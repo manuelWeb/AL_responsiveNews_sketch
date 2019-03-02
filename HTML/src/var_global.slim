@@ -8,9 +8,9 @@ ruby:
   class Brand
     # attr_reader :name
     # attr_writer :name
-    attr_accessor :name
+    attr_accessor :name, :url, :contact
     def initialize
-      @name = ""
+      @name = @url = @contact = ''
     end
     # Renvoie simplement @name
     def name=(un_nom)
@@ -42,6 +42,8 @@ ruby:
 
 / - $brand = Brand.new($objso["brand"]["name"])
 - $brand = Brand.new
-- $brand.name = "Un autre nom de branding du groupe Domoti par exemple"
+- $brand.name = $objso["brand"]["name"]
+- $brand.url = $objso["brand"]["url"]
+- $brand.contact = $objso["brand"]["contact"]
 - $tab = Tag.new("table")
 - $td = Tag.new("td")
