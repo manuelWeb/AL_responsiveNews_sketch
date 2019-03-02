@@ -5,13 +5,13 @@
 
 / Ruby dynamic tag and attribut
 ruby:
-  class Adresse
-    def initialize(rue)
-      @rue = rue
+  class Brand
+    def initialize(name)
+      @name = name
     end
-    # Renvoie simplement @rue
-    def rue
-      @rue
+    # Renvoie simplement @name
+    def name
+      @name
     end
   end
 
@@ -33,20 +33,6 @@ ruby:
     end
   end
 
-
-- $adresse = Adresse.new("Rue de la Renaissance, 49")
+- $brand = Brand.new($objso["brand"]["name"])
 - $tab = Tag.new("table")
 - $td = Tag.new("td")
-
-
-/ ruby:
-/   class Tag
-/     def tab0
-/       $tab0ctr ? {
-/         tag: 'table',
-/         border: '0', cellpadding: '0', cellspacing: '0',
-/         align: "center"
-/         } : {}
-/     end
-/   end
-/ - $tab0ctr = true
