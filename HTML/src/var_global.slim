@@ -19,15 +19,24 @@ ruby:
     def initialize(tag)
       @tag = tag
     end
-    # return tag
-    def tag
-      @tag = {tag: 'table', border: '0', cellpadding: '0', cellspacing: '0', align: "center"}
+    # return table bd:0 cp+cs:0 a:c
+    def c0
+      @table = {tag: @tag, border: '0', cellpadding: '0', cellspacing: '0', align: "center"}
+    end
+    # return td align:right
+    def tdar
+      @td = {tag: @tag, align: "right"}
+    end
+    # return td align:center
+    def tdac
+      @td = {tag: @tag, align: "center"}
     end
   end
 
 
 - $adresse = Adresse.new("Rue de la Renaissance, 49")
-- $tag = Tag.new("")
+- $tab = Tag.new("table")
+- $td = Tag.new("td")
 
 
 / ruby:
@@ -41,5 +50,3 @@ ruby:
 /     end
 /   end
 / - $tab0ctr = true
-
-/ Tag = Tag.new
