@@ -1,25 +1,14 @@
-/ - adresse = Adresse.new("Rue de la Renaissance, 49")
-/ - $tab0ctr = { tag: 'table', border: '0', cellpadding: '0', cellspacing: '0', align: "center" }
-ruby:
-  def tab0
-    $tab0ctr ? {
-      tag: 'table',
-      border: '0', cellpadding: '0', cellspacing: '0',
-      align: "center"
-      } : {}
-  end
-- $tab0ctr = true
-
 / table class="m0auto mobile_320" width="636"
-*tab0 class="m0auto mobile_320" width="636___"
-  / tr
-  /   td add_blog 'Hella yolo?'
+*$tag.tag
+  tr
+    td
+      | #{$adresse.rue}
+*$tag.tag class="m0auto mobile_320" width="636"
   tr
     td.lh16.pdt4.pdb4 align="center"
       p.fz12.ff1 align="center"
         == ($objso["head_doc"]["fr"][0])
         br
-         == $adresse.rue
         span.fz10
           ==($objso["head_doc"]["fr"][1])
           a.tdu href==($link_head) target="_blank"

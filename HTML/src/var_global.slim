@@ -4,8 +4,31 @@
 -$objso = JSON.parse(file)
 
 / Ruby dynamic tag and attribut
+ruby:
+  class Adresse
+    def initialize(rue)
+      @rue = rue
+    end
+    # Renvoie simplement @rue
+    def rue
+      @rue
+    end
+  end
 
-/ Slim::Engine.set_options shortcut: {'@' => {attr: 'role'}, '#' => {attr: 'id'}, '.' => {attr: 'class'}}
+  class Tag
+    def initialize(tag)
+      @tag = tag
+    end
+    # return tag
+    def tag
+      @tag = {tag: 'table', border: '0', cellpadding: '0', cellspacing: '0', align: "center"}
+    end
+  end
+
+
+- $adresse = Adresse.new("Rue de la Renaissance, 49")
+- $tag = Tag.new("")
+
 
 / ruby:
 /   class Tag
