@@ -30,6 +30,10 @@ ruby:
     def c0fullw
       @table = {tag: @tag, border: '0', cellpadding: '0', cellspacing: '0', align: 'center', width: '100%', class: 'mobile_320'}
     end
+    # return table bd:0 cp+cs:0 a:c
+    def c0m320
+      @table = {tag: @tag, border: '0', cellpadding: '0', cellspacing: '0', align: 'center', class: 'mobile_320'}
+    end
     # return td align:right
     def ar
       @td = {tag: @tag, align: 'right'}
