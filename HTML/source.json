@@ -1,6 +1,6 @@
 {
   "date": "0618",
-  "campaignName" : "no_def",
+  "campaignName": "no_def",
   "campaignNameM": "no_def",
   "title": {
     "bf": "STOP aux insectes ! Protégez-vous !",
@@ -14,7 +14,11 @@
     "bf": "Découvrez notre sélection pour lutter contre les insectes à partir de 5,95€.",
     "bv": "Mmm, de onnavolgbaar lekkere smaak van zelfgemaakte jam!<br /> Abrikozen, aardbeien, bosbessen, frambozen…<br /> Maar hoe maak je lekkere jam?<br /> Je hebt natuurlijk rijpe vruchten nodig,<br /> maar ook en vooral het juiste keukengerei!<br /> Ontdek onze speciale confituur selectie!",
     "de": "Ah... nichts schmeckt so gut wie selbstgemachte Konfitüre!<br /> Aprikosen, Erdbeeren, Blaubeeren, Himbeeren… Und wie gelingt unsere Konfitüre?<br />Natürlich durch die Auswahl von reifen Früchten, aber vor allem durch die Wahl der richtigen Utensilien!<br /> Entdecken Sie unsere ganze Auswahl speziell Marmelade!",
-    "fr": ["Il est encore temps de valider votre panier, retrouvez-le en un clic ! ","Si la page ne s'affiche pas correctement consultez la", "version en ligne"],
+    "fr": [
+      "Il est encore temps de valider votre panier, retrouvez-le en un clic ! ",
+      "Si la page ne s'affiche pas correctement consultez la",
+      "version en ligne"
+    ],
     "nl": "Mmm, de onnavolgbaar lekkere smaak van zelfgemaakte jam!<br /> Abrikozen, aardbeien, bosbessen, frambozen…<br /> Maar hoe maak je lekkere jam?<br /> Je hebt natuurlijk rijpe vruchten nodig,<br /> maar ook en vooral het juiste keukengerei!<br /> Ontdek onze speciale confituur selectie!",
     "uk": "Ah, the inimitable taste of home-made jams!<br /> Apricots, strawberries, blueberries, raspberries, But how does one make good jams?<br /> Of course, by choosing ripe fruit but also with the right utensils!<br /> Discover our whole special jam selection!"
   },
@@ -32,14 +36,13 @@
     "uk": "1764"
   },
   "layout": {
-    "tb_bacc": "border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\"",
-    "tb_bacc_": "0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\"",
-    "addLogo" : true,
+    "bdr-l": 6,
+    "addLogo": true,
     "addPromo": false,
-    "topShad" : false,
-    "shadLR"  : false,
+    "topShad": false,
+    "shadLR": false,
     "shadLR_H": "1140",
-    "abspath" : true
+    "abspath": true
   },
   "url": {
     "bf": "no-def",

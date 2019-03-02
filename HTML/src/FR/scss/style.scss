@@ -21,6 +21,15 @@ $ff2: Georgia, 'Times New Roman', Times, serif;
 .pdt4 {
   @include pdt(4);
 }
+.pdr4 {
+  @include pdr(4);
+}
+.pdb4 {
+  @include pdb(4);
+}
+.pdl4 {
+  @include pdl(4);
+}
 .pdt6 {
   @include pdt(6);
 }
