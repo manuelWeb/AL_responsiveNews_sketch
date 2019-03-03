@@ -1,6 +1,7 @@
 table.mobile_320 width="636" border="0" cellpadding="0" cellspacing="0" align="center" style="margin: 0 auto;"
   tr
     td.mob_d_none width="#{$objso['layout']['bdr-l']}"
+
     td valign="bottom"
       table border="0" cellpadding="0" cellspacing="0"
         tr
@@ -37,14 +38,15 @@ table.mobile_320 width="636" border="0" cellpadding="0" cellspacing="0" align="c
                       td.mob_tal align="center"
                         table border="0" cellpadding="0" cellspacing="0"
                           tr
-                            td.pdl24.pdr24.bds-3.vam height="46" bgcolor="#{$btnColor}"
+                            / btn bgcolor => source.json lay/color/prim
+                            td.pdl24.pdr24.bds-3.vam height="46" bgcolor="#{$primaryColor}"
                               p
                                 a.cf.tdn.fz18 href==("#{$url}#{$panier}#{$goTk[:p1]}#{$utmcont[3]}#{$campaign}") target="_blank"
                                   | > Je retrouve mon panier !
-                td width="#{$objso['layout']['bdr-l']}"
+                td width="#{$objso['layout']['gutter']}"
                 td.mob_d_none.mob_nopd valign="bottom" width==($column*2+$gutter*1) align="left"
                   a href==("#{$url}#{$panier}#{$goTk[:p1]}#{$utmcont[3]}#{$campaign}") target="_blank"
-                    img src==(($abspath == true ? $srcAbs : $srcRel)+"s3c2_accVisu.jpg") width="248" alt=""
+                    img src==(($abspath == true ? $srcAbs : $srcRel)+"s3c2_accVisu.jpg") width="252" alt=""
 
     td.mob_d_none width="#{$objso['layout']['bdr-l']}"
 

@@ -36,13 +36,20 @@
     "uk": "1764"
   },
   "layout": {
+    "color": {
+      "primary"  : "#71439A",
+      "secondary": "",
+      "tertiary" : ""
+    },
+    "column": 44,
+    "gutter": 8,
     "bdr-l": 6,
     "addLogo": true,
     "addPromo": false,
     "topShad": false,
     "shadLR": false,
     "shadLR_H": "1140",
-    "abspath": true
+    "abspath": false
   },
   "url": {
     "bf": "no-def",
