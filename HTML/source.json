@@ -41,8 +41,10 @@
       "secondary": "",
       "tertiary" : ""
     },
+    "totWidth": 636,
     "column": 44,
     "gutter": 8,
+    "mr-l": 4,
     "bdr-l": 6,
     "addLogo": true,
     "addPromo": false,
