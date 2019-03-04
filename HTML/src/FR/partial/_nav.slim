@@ -1,6 +1,6 @@
 // nav solde AL
--univ = ["Broderie,<br />canevas", "Loisirs<br />Créatifs", "Tricot &<br />crochet", "Couture &<br />mercerie", "Arts<br />graphiques", "Puzzles"]
--univItem = ["canevas", "loisirs-creatifs", "tricot-crochet", "broderie-point-compte", "toiles-fils", "mercerie"]
+-univ     = $objso["nav"]["txt"]
+-univItem = $objso["nav"]["link"]
 
 tr
   td
@@ -19,7 +19,7 @@ tr
                   - if j == 0
                     - for i in 0..2
                       td.nav.mob_33.tac.cel-hov class==((i < 3 == true ? "bdb2" : "")) align="center" valign="middle" bgcolor="#674FA0" height="44"
-                        a.univ.tdn.tdn-hov.db class==((i < 2 == true ? "bdr2" : "")) href==($url+univItem[i]+"/Univers.html?&utm_nav_#{univItem[i]}#{$campaign}") target="_blank"
+                        a.univ.tdn.tdn-hov.db class==((i < 2 == true ? "bdr2" : "")) href==($url+univItem[i]+"/Univers.html#{$goTk[:p1]}#{univItem[i]}#{$campaign}") target="_blank"
                           == univ[i]
                       // border physique
                       *$td.vhamidd class="vam mob_d_none" bgcolor="#674FA0"
@@ -33,7 +33,7 @@ tr
                   - if j == 1
                     - for i in 3..5
                       td.nav.mob_33.tac.cel-hov align="center" valign="middle" bgcolor="#674FA0" height="44"
-                        a.univ.tdn.tdn-hov.db class==((i < 5 == true ? "bdr2" : "")) href==($url+univItem[i]+"/Univers.html?&utm_nav_#{univItem[i]}#{$campaign}") target="_blank"
+                        a.univ.tdn.tdn-hov.db class==((i < 5 == true ? "bdr2" : "")) href==($url+univItem[i]+"/Univers.html#{$goTk[:p1]}#{univItem[i]}#{$campaign}") target="_blank"
                           == univ[i]
                       - if i < 5
                         *$td.vhamidd class="vam mob_d_none" bgcolor="#674FA0"

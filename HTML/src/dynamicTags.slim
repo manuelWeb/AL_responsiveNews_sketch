@@ -13,6 +13,23 @@ ruby:
     end
   end
 
+  class Vrb
+    def initialize(arg)
+      @arg = arg
+    end
+    # Renvoie interpolation var ruby #{}
+    def arg
+      # +"[\""+@arg+"\"]"
+      $objso["brand"]["#{@arg}"]
+    end
+  end
+/ - $brand = Brand.new($objso["brand"]["name"])
+- $brand = Brand.new
+- $vr = Vrb.new("content")
+- $brand.name = $objso["brand"]["name"]
+- $brand.url = $objso["brand"]["url"]
+
+ruby:
   class Tag
     def initialize(tag)
       @tag = tag
@@ -55,10 +72,6 @@ ruby:
     end
   end
 
-/ - $brand = Brand.new($objso["brand"]["name"])
-- $brand = Brand.new
-- $brand.name = $objso["brand"]["name"]
-- $brand.url = $objso["brand"]["url"]
 - $brand.contact = $objso["brand"]["contact"]
 - $tab = Tag.new("table")
 - $td = Tag.new("td")

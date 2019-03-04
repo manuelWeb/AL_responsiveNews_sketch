@@ -1,6 +1,6 @@
 / $date=month+year;campaign
--$date = "0319"
--$campagne = "relance_panier"
+-$date = $objso["date"]
+-$campagne = "#{$date}_relance_panier"
 
 -$url = "http://#{$objso["url"]["fr"]}/fr/"
 / lien header miroir "version en ligne"
@@ -19,13 +19,13 @@
 - $goTk = {###,
   p1: "?utm_source=NL&utm_medium=email&utm_content=",
 }
-/ "#{$url}#{$index}#{$goTk[:p1]}#{$utmcont[0]}#{$campaign}"
 - $campaign = "&utm_campaign=#{$campagne}"
+/ track &utm_content
 - univers = ["univ_C", "univ_ER", "univ_SB", "univ_MD", "univ_L", "univ_VA", "univ_BA"]
 - reassur = ["garantie", "livraison", "paiement", "garantie"]
-/ URL
 - $utmcont =["logo", "compte", univers, "btn_retrouver", "visuel", "accroche", "prix", "btn_valider", reassur, "contact", "desabo", "URL"]
 
+/ URL
 / - $utmLegalUrl     = $utm[0]+$utmtxt[0]+$utm[1]+$utmtxt[1]+$utm[2]+$utmcont[6]+$utm[3]+$utmtxt[2]
 / - $utmLegalContact = "?val=A&utm_source=NL&utm_medium=email&utm_content=contact"+$utm[3]+$utmtxt[2]
 / - $utmLegalDesabo  = "?utm_source=NL&utm_medium=email&utm_content=desabo"+$utm[3]+$utmtxt[2]

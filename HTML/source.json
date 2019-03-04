@@ -1,5 +1,5 @@
 {
-  "date": "0618",
+  "date": "0319",
   "campaignName": "no_def",
   "campaignNameM": "no_def",
   "title": {
@@ -26,6 +26,13 @@
     "name": "L'ATELIER de Lucie",
     "url": "latelierdelucie.com",
     "contact": "latelierdelucie_et_vous"
+  },
+  "nav": {
+    "link": ["broderie-canevas-point-noue", "loisirs-creatifs", "tricot-crochet", "couture-mercerie", "arts-graphiques", "puzzles"],
+    "txt": ["Broderie,<br />canevas", "Loisirs<br />Créatifs", "Tricot &<br />crochet", "Couture &<br />mercerie", "Arts<br />graphiques", "Puzzles"]
+  },
+  "track": {
+    "content": ["logo", "compte", "btn_retrouver", "visuel", "accroche", "prix", "btn_valider", "garantie", "livraison", "paiement", "contact", "desabo", "URL"]
   },
   "ID": {
     "bf": "1762",
