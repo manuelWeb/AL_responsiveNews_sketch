@@ -17,4 +17,4 @@ tr
           / a href==("#{$url}#{$cpt}#{$goTk[:p1]}#{$utmcont[1]}#{$campaign}") target="_blank"
           a href==("#{$url}#{$cpt}#{$goTk[:p1]}compte#{$campaign}") target="_blank"
            img.mob_dib src==(($abspath == true ? $srcAbs : $srcRel)+"s1c2_cpt.png") width="93" alt=""
-           == $vr.arg[0]
+           == $vr.arg('track','content')[0]

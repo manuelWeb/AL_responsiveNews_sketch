@@ -18,15 +18,15 @@ ruby:
       @arg = arg
     end
     # Renvoie interpolation var ruby #{}
-    def arg
-      # @arg
-      # +"[\""+@arg+"\"]"
-      $objso["track"]["#{@arg[0]}"]
+    def arg(arg1,arg2)
+      # "#{arg1}#{arg2}"
+      $objso["#{arg1}"]["#{arg2}"]
     end
   end
 / - $brand = Brand.new($objso["brand"]["name"])
 - $brand = Brand.new
-- $vr = Vrb.new("content")
+- $vr = Vrb.new
+
 
 - $brand.name = $objso["brand"]["name"]
 - $brand.url = $objso["brand"]["url"]
