@@ -10,7 +10,7 @@ table.mobile_300 width="612" border="0" cellpadding="0" cellspacing="0" align="c
     tr
       - if i % 2 == 1
         td.mob_d_b.pdb12 valign="top"
-          table border="0" cellpadding="0" cellspacing="0"
+          *$tab.c0
             tr
               td.pdb16 align="center" valign="top" width="#{$column*6+$gutter*5}"
                 a href==("#{$link[1]}#{$ref[cpt]}.html#{$goTk[:p1]}#{$utmcont[4]}_#{cpt+1}#{$campaign}") target="_blank"
@@ -22,7 +22,7 @@ table.mobile_300 width="612" border="0" cellpadding="0" cellspacing="0" align="c
                     | #{$putLib[cpt]}
             tr
               td align="center"
-                table border="0" cellpadding="0" cellspacing="0"
+                *$tab.c0
                   tr
                     td.price
                       a href==("#{$link[1]}#{$ref[cpt]}.html#{$goTk[:p1]}#{$utmcont[6]}_#{cpt+1}#{$campaign}") target="_blank"
@@ -31,7 +31,7 @@ table.mobile_300 width="612" border="0" cellpadding="0" cellspacing="0" align="c
           / | #{cpt} |  && $ref.length <= $nbpk.length
         -if $nbpk[i]
           td.mob_d_b.pdb12 valign="top"
-            table border="0" cellpadding="0" cellspacing="0"
+            *$tab.c0
               tr
                 td.pdb16 align="center" valign="top" width="#{$column*6+$gutter*5}"
                   a href==("#{$link[1]}#{$ref[cpt+1]}.html#{$goTk[:p1]}#{$utmcont[4]}_#{cpt+2}#{$campaign}") target="_blank"
@@ -43,7 +43,7 @@ table.mobile_300 width="612" border="0" cellpadding="0" cellspacing="0" align="c
                       | #{$putLib[cpt+1]}
               tr
                 td align="center"
-                  table border="0" cellpadding="0" cellspacing="0"
+                  *$tab.c0
                     tr
                       td.price
                         a href==("#{$link[1]}#{$ref[cpt+1]}.html#{$goTk[:p1]}#{$utmcont[6]}_#{cpt+2}#{$campaign}") target="_blank"
