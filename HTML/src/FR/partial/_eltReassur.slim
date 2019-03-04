@@ -1,4 +1,4 @@
-- $rassur_txt = ["0", "Satisfait<br />ou remboursé<br /><span class=\"small\">Retour ou Échange</span>", "Livraison<br />à la carte", "Paiement<br />sécurisé", "Garantie<br />2 ans"]
+- $rassur_txt = ["Satisfait<br />ou remboursé<br /><span class=\"small\">Retour ou Échange</span>", "Livraison<br />à la carte", "Paiement<br />sécurisé", "Garantie<br />2 ans"]
 
 / table.mobile_320 width="636" border="0" cellpadding="0" cellspacing="0" align="center" style="margin: 0 auto;"
 *$tab.c0m320 class="m0auto" width="#{$objso["layout"]["totWidth"]}"
@@ -10,18 +10,42 @@
       *$tab.c0pd_r_l_4 class="m0auto mobile_320 trassur"
         tr
           td
-            img src==(($abspath == true ? $srcAbs : $srcRel)+"foo_hr.png") width="616" alt=""
+            img.centw src==(($abspath == true ? $srcAbs : $srcRel)+"foo_hr.png") width="616" alt=""
         tr
-          td height="92" bgcolor="#{$primaryColor}"
-            *$tab.c0
+          td bgcolor="#{$primaryColor}"
+            *$tab.c0m320
               tr
-                - for i in 1..4
-                  td width="#{$column*3+$gutter*3}" align="center" valign="bottom"
-                    a href==("#{$url}#{$reassu[0]+$reassu[i]}#{$goTk[:p1]}#{$utmcont[8][i-1]}#{$campaign}") target="_blank"
-                      img src==(($abspath == true ? $srcAbs : $srcRel)+"EltRassur#{i}.png") width="30" alt=""
-              tr
-                - for i in 1..4
-                  td.txt align="center" valign="top"
-                    == $rassur_txt[i]
+                // mobile 2xTD > Satisfait + Livraison
+                td.mob_d_b.pdt8.pdb8
+                  *$tab.c0m320
+                    tr
+                      - for i in 0..1
+                        td width="#{$column*3+$gutter*2}" align="center" valign="bottom"
+                          a href==("#{$url}#{$reassu[0]+$reassu[i+1]}#{$goTk[:p1]}#{$utmcont[8][i]}#{$campaign}") target="_blank"
+                            img src==(($abspath == true ? $srcAbs : $srcRel)+"EltRassur#{i+1}.png") width="30" alt=""
+                        - if i < 1
+                          td.mob_d_none width="#{$gutter}"
+                    tr
+                      - for i in 0..1
+                        td.txt align="center" valign="top"
+                          == $rassur_txt[i]
+                        - if i < 1
+                          td.mob_d_none width="#{$gutter}"
+                // mobile 2xTD > Paiement + garantie
+                td.mob_d_b.pdt8.pdb8
+                    *$tab.c0m320
+                      tr
+                        - for i in 1..2
+                          td width="#{$column*3+$gutter*2}" align="center" valign="bottom"
+                            a href==("#{$url}#{$reassu[0]+$reassu[i+2]}#{$goTk[:p1]}#{$utmcont[8][i+1]}#{$campaign}") target="_blank"
+                              img src==(($abspath == true ? $srcAbs : $srcRel)+"EltRassur#{i+2}.png") width="30" alt=""
+                          - if i < 2
+                            td.mob_d_none width="#{$gutter}"
+                      tr
+                        - for i in 1..2
+                          td.txt align="center" valign="top"
+                            == $rassur_txt[i+1]
+                          - if i < 2
+                            td.mob_d_none width="#{$gutter}"
 
     td.mob_d_none width="#{$objso['layout']['bdr-l']}"

@@ -33,6 +33,9 @@ $ff2: Georgia, 'Times New Roman', Times, serif;
 .pdt6 {
   @include pdt(6);
 }
+.pdt8 {
+  @include pdt(8);
+}
 .pdt10 {
   @include pdt(10);
 }
@@ -240,7 +243,7 @@ td {
 }
 // table rassurance
 .trassur {
-  // background-color: $primary;
+
   .txt {
     font-family: $ff1;
     font-size: 16px;
@@ -250,6 +253,7 @@ td {
       font-size: 10px;
     }
   }
+
 }
 .rassur {
   font-size: 12px;
