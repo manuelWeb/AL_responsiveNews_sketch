@@ -14,18 +14,20 @@ ruby:
   end
 
   class Vrb
-    def initialize(arg)
+    def initialize(*arg)
       @arg = arg
     end
     # Renvoie interpolation var ruby #{}
     def arg
+      # @arg
       # +"[\""+@arg+"\"]"
-      $objso["brand"]["#{@arg}"]
+      $objso["track"]["#{@arg[0]}"]
     end
   end
 / - $brand = Brand.new($objso["brand"]["name"])
 - $brand = Brand.new
 - $vr = Vrb.new("content")
+
 - $brand.name = $objso["brand"]["name"]
 - $brand.url = $objso["brand"]["url"]
 
