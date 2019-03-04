@@ -22,7 +22,7 @@ tr
                         a.univ.tdn.tdn-hov.db class==((i < 2 == true ? "bdr2" : "")) href==($url+univItem[i]+"/Univers.html?&utm_nav_#{univItem[i]}#{$campaign}") target="_blank"
                           == univ[i]
                       // border physique
-                      td.mob_d_none bgcolor="#674FA0"
+                      *$td.vhamidd class="vam mob_d_none" bgcolor="#674FA0"
                         *$tab.c0
                           tr
                             - if i < 2
@@ -36,7 +36,7 @@ tr
                         a.univ.tdn.tdn-hov.db class==((i < 5 == true ? "bdr2" : "")) href==($url+univItem[i]+"/Univers.html?&utm_nav_#{univItem[i]}#{$campaign}") target="_blank"
                           == univ[i]
                       - if i < 5
-                        td.mob_d_none bgcolor="#674FA0"
+                        *$td.vhamidd class="vam mob_d_none" bgcolor="#674FA0"
                           *$tab.c0
                             tr
                               td.mob_d_none width="2" height="28" bgcolor="#ffffff"

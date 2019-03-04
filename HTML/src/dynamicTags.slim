@@ -37,9 +37,13 @@ ruby:
     def ar
       @td = {tag: @tag, align: 'right'}
     end
-    # return td align:center
+    # return td valign:top
     def vatop
       @td = {tag: @tag, valign: 'top'}
+    end
+    # return td valign:[middle,center]
+    def vhamidd
+      @td = {tag: @tag, valign: 'middle', align: 'center'}
     end
     # return td align:center
     def acenter
