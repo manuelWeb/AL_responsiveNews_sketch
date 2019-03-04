@@ -51,7 +51,7 @@
     "topShad": false,
     "shadLR": false,
     "shadLR_H": "1140",
-    "abspath": false
+    "abspath": true
   },
   "url": {
     "bf": "no-def",

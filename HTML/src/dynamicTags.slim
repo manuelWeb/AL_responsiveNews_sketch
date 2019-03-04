@@ -38,7 +38,11 @@ ruby:
       @td = {tag: @tag, align: 'right'}
     end
     # return td align:center
-    def ac
+    def vatop
+      @td = {tag: @tag, valign: 'top'}
+    end
+    # return td align:center
+    def acenter
       @td = {tag: @tag, align: 'center'}
     end
     # return td align:center
