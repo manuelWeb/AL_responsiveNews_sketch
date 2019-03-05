@@ -1,35 +1,20 @@
 / Ruby dynamic tag and attribut
 ruby:
-  class Brand
-    # attr_reader :name
-    # attr_writer :name
-    attr_accessor :name, :url, :contact
-    def initialize
-      @name = @url = @contact = ''
-    end
-    # Renvoie simplement @name
-    def name=(un_nom)
-      @name = un_nom
-    end
-  end
-
   class Vrb
     def initialize(*arg)
       @arg = arg
     end
     # Renvoie interpolation var ruby #{}
-    def arg(arg1,arg2)
+    def arg(*arg)
       # "#{arg1}#{arg2}"
-      $objso["#{arg1}"]["#{arg2}"]
+      $objso["#{arg[0]}"]["#{arg[1]}"]
     end
   end
-/ - $brand = Brand.new($objso["brand"]["name"])
-- $brand = Brand.new
+
 - $vr = Vrb.new
 - $tkc = $vr.arg('track','content')
+- $dt = $vr.arg('title','fr')
 
-- $brand.name = $objso["brand"]["name"]
-- $brand.url = $objso["brand"]["url"]
 
 ruby:
   class Tag
@@ -74,6 +59,5 @@ ruby:
     end
   end
 
-- $brand.contact = $objso["brand"]["contact"]
 - $tab = Tag.new("table")
 - $td = Tag.new("td")
