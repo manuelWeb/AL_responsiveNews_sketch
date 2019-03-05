@@ -1,11 +1,10 @@
 == Slim::Template.new('src/var_global.slim').render
 == Slim::Template.new('src/dynamicTags.slim').render
+// attention _varLib.slim est gen dyn
 == Slim::Template.new('./src/FR/var/_varLib.slim').render
 == Slim::Template.new('./src/FR/var/varLINK.slim').render
 == Slim::Template.new('./src/FR/var/_var-layout.slim').render
-== Slim::Template.new('./src/FR/var/var_legal.slim').render
-- $abspath      = $objso["layout"]["abspath"]
-- $legalService = true
+
 - $imgBGcondition = $abspath == true ? $srcAbs : $srcRel
 
 doctype transitional
@@ -99,4 +98,4 @@ html
       /! mentions légales
       tr
         td
-          == Slim::Template.new('./src/FR/partial/_mentions.slim').render
+          == Slim::Template.new('./src/FR/partial/_legal.slim').render

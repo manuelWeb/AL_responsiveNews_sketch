@@ -57,11 +57,24 @@ ruby:
     def acenter
       @td = {tag: @tag, align: 'center'}
     end
-    # return td align:center
+    # return td align:center + .padding-r+l:4px
     def pdrl4
       @td = {tag: @tag, align: 'center', class: 'pdr4 pdl4'}
     end
   end
 
+  class Lk
+    attr_accessor :tag, :classNamme
+    def initialize(tag)
+      @tag = ""
+    end
+    # return a target="_blank"
+    def blk(*className)
+      @tag = {tag: @tag, target: "_blank", class: @className}
+    end
+  end
+
 - $tab = Tag.new("table")
-- $td = Tag.new("td")
+- $td  = Tag.new("td")
+- $a   = Lk.new("a")
+- $a   = $a.blk

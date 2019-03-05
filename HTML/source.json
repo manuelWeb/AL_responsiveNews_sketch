@@ -1,47 +1,54 @@
 {
   "date": "0319",
-  "campaignName": "no_def",
-  "campaignNameM": "no_def",
+  "campaignName": "_relance_panier",
+  "campaignNameM": "_relance_panier",
   "title": {
-    "bf": "STOP aux insectes ! Protégez-vous !",
-    "bv": "Ontdek onze speciale confituur selectie!",
-    "de": "Entdecken Sie schnell unsere Auswahl Marmelade!",
+    "bf": "…",
+    "bv": "…",
+    "de": "…",
     "fr": "L'ATELIER de Lucie",
-    "nl": "Ontdek onze speciale confituur selectie!",
-    "uk": "Discover quickly our jam selection!"
+    "nl": "…",
+    "uk": "…"
   },
   "head_doc": {
-    "bf": "Découvrez notre sélection pour lutter contre les insectes à partir de 5,95€.",
-    "bv": "Mmm, de onnavolgbaar lekkere smaak van zelfgemaakte jam!<br /> Abrikozen, aardbeien, bosbessen, frambozen…<br /> Maar hoe maak je lekkere jam?<br /> Je hebt natuurlijk rijpe vruchten nodig,<br /> maar ook en vooral het juiste keukengerei!<br /> Ontdek onze speciale confituur selectie!",
-    "de": "Ah... nichts schmeckt so gut wie selbstgemachte Konfitüre!<br /> Aprikosen, Erdbeeren, Blaubeeren, Himbeeren… Und wie gelingt unsere Konfitüre?<br />Natürlich durch die Auswahl von reifen Früchten, aber vor allem durch die Wahl der richtigen Utensilien!<br /> Entdecken Sie unsere ganze Auswahl speziell Marmelade!",
+    "bf": "…",
+    "bv": "…",
+    "de": "…",
     "fr": [
       "Il est encore temps de valider votre panier, retrouvez-le en un clic ! ",
       "Si la page ne s'affiche pas correctement consultez la",
       "version en ligne"
     ],
-    "nl": "Mmm, de onnavolgbaar lekkere smaak van zelfgemaakte jam!<br /> Abrikozen, aardbeien, bosbessen, frambozen…<br /> Maar hoe maak je lekkere jam?<br /> Je hebt natuurlijk rijpe vruchten nodig,<br /> maar ook en vooral het juiste keukengerei!<br /> Ontdek onze speciale confituur selectie!",
-    "uk": "Ah, the inimitable taste of home-made jams!<br /> Apricots, strawberries, blueberries, raspberries, But how does one make good jams?<br /> Of course, by choosing ripe fruit but also with the right utensils!<br /> Discover our whole special jam selection!"
+    "nl": "…",
+    "uk": "…"
+  },
+  "rgpd": {
+    "s1a": "Merci de ne pas répondre à ce message.<br />Conformément au règlement général sur la protection des données (RGPD) et à la loi Informatique et Libertés, les informations demandées par DOMOTI, responsable du traitement, sont nécessaires pour la gestion de votre commande et le suivi de notre relation commerciale. Vos données peuvent être louées, cédées ou échangées. Elles peuvent être communiquées à un tiers concerné dans le cadre d’un changement de contrôle, de fusion, de cession de fonds de commerce ou d’apport partiel d’actifs de DOMOTI. Vous disposez d’un droit d’accès, de rectification et d’opposition au traitement de ces données. Vous pouvez exercer l'ensemble de vos droits en écrivant à : ",
+    "s1b": " - 59 685 Roubaix Cedex ou par mail à l’adresse dpo-groupe-domoti@domoti.fr, en précisant votre nom, prénom, adresse, numéro de client et par mesure de sécurité, une copie de votre pièce d'identité.<br />Pour en savoir plus sur la politique de confidentialité des données, vous pouvez",
+    "s2": "cliquer ici",
+    "s3": "DOMOTI SAS, capital de 100 000€ - RCS Lille B 342 883 758.",
+    "lk": "achat_confiance/conditions-generales-de-vente.aspx"
   },
   "brand": {
     "name"   : "L'ATELIER de Lucie",
     "url"    : "https://latelierdelucie.com",
-    "miror" : "Newsletters/miroir/Relance_panier_",
-    "contact": "latelierdelucie_et_vous"
+    "miror"  : "Newsletters/miroir/Relance_panier_",
+    "cpt"    : "compte_client/compte-perso.aspx",
+    "panier" : "commande/panier.aspx",
+    "assur": ["achat_confiance/", "garanties.aspx", "informations-livraison.aspx", "paiement-securise.aspx", "garanties.aspx"],
+    "contact": "lucie_et_vous/contact.aspx?val=A",
+    "desabo" : "animation/DesinscriptionNewsletter.aspx"
   },
   "nav": {
     "link": ["broderie-canevas-point-noue", "loisirs-creatifs", "tricot-crochet", "couture-mercerie", "arts-graphiques", "puzzles"],
     "txt": ["Broderie,<br />canevas", "Loisirs<br />Créatifs", "Tricot &<br />crochet", "Couture &<br />mercerie", "Arts<br />graphiques", "Puzzles"]
   },
   "track": {
-    "content": ["logo", "compte", "btn_retrouver", "visuel", "accroche", "prix", "btn_valider", "garantie", "livraison", "paiement", "contact", "desabo", "URL"]
+    "content": ["logo", "compte", "btn_retrouver", "visuel", "accroche", "prix", "btn_valider", "garantie", "livraison", "paiement", "garantie", "rgpd", "cgv", "contact", "desabo", "URL"]
   },
   "ID": {
-    "bf": "1762",
-    "bv": "1766",
-    "de": "1765",
-    "fr": "1769",
-    "nl": "1761",
-    "uk": "1764"
+    "bf": "1762", "bv": "1766", "de": "1765",
+    "fr": "1769", "nl": "1761", "uk": "1764"
   },
   "layout": {
     "color": {

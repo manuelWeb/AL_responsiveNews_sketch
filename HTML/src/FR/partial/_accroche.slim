@@ -40,11 +40,11 @@
                             / btn bgcolor => source.json lay/color/prim
                             td.pdl24.pdr24.bds-3.vam height="46" bgcolor="#{$primaryColor}"
                               p
-                                a.cf.tdn.fz18 href==("#{$url}#{$panier}#{$goTk[:p1]}#{$tkc[2]}#{$campaign}") target="_blank"
+                                a.cf.tdn.fz18 href==("#{$url}#{$vr.arg('brand','panier')}#{$goTk[:p1]}#{$tkc[2]}#{$campaign}") target="_blank"
                                   | > Je retrouve mon panier !
                 td width="#{$objso['layout']['gutter']}"
                 td.mob_d_none.mob_nopd valign="bottom" width==($column*2+$gutter*1) align="left"
-                  a href==("#{$url}#{$panier}#{$goTk[:p1]}#{$tkc[2]}#{$campaign}") target="_blank"
+                  a href==("#{$url}#{$vr.arg('brand','panier')}#{$goTk[:p1]}#{$tkc[2]}#{$campaign}") target="_blank"
                     img src==(($abspath == true ? $srcAbs : $srcRel)+"s3c2_accVisu.jpg") width="252" alt=""
 
     td.mob_d_none width="#{$objso['layout']['bdr-l']}"
