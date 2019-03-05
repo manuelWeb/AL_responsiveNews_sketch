@@ -1,12 +1,14 @@
-/ $date=month+year;campaign
--$date = $objso["date"]
--$campagne = "#{$date}_relance_panier"
+-$campagne = "#{$dt}_relance_panier"
 
--$url = "http://#{$objso["url"]["fr"]}/fr/"
-/ lien header miroir "version en ligne"
--$link_header = "https://#{$objso["brand"]["url"]}/Newsletters/miroir/Relance_panier_#{$date}/FR/index.htm"
+-$url = "http://#{$vr.arg('url','fr')}/fr/"
+
+// diff country for each var/varLINK.slim
+// important upcase true false
+-$country = 'fr'
+
 / liens produits fin url dyn
 -$link = ["0", "#{$url}x/x/x/"]
+
 / index
 -$index    = "index.aspx"
 -$cpt      = "compte_client/compte-perso.aspx"

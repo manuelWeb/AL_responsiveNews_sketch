@@ -9,7 +9,7 @@
         br
         span.fz10
           ==($objso["head_doc"]["fr"][1]) + ' '
-          a.tdu href==($dt) target="_blank"
+          a.tdu href==($vr.arg('brand','url')+'/'+$vr.arg('brand','miror')+$dt+"/#{$country.upcase}/index.htm") target="_blank"
             strong.tdu
               == ($objso["head_doc"]["fr"][2])
 

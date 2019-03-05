@@ -23,8 +23,9 @@
     "uk": "Ah, the inimitable taste of home-made jams!<br /> Apricots, strawberries, blueberries, raspberries, But how does one make good jams?<br /> Of course, by choosing ripe fruit but also with the right utensils!<br /> Discover our whole special jam selection!"
   },
   "brand": {
-    "name": "L'ATELIER de Lucie",
-    "url": "latelierdelucie.com",
+    "name"   : "L'ATELIER de Lucie",
+    "url"    : "https://latelierdelucie.com",
+    "miror" : "Newsletters/miroir/Relance_panier_",
     "contact": "latelierdelucie_et_vous"
   },
   "nav": {
@@ -49,16 +50,16 @@
       "tertiary" : ""
     },
     "totWidth": 636,
-    "column": 44,
-    "gutter": 8,
-    "mr-l": 4,
-    "bdr-l": 6,
-    "addLogo": true,
+    "column"  : 44,
+    "gutter"  : 8,
+    "mr-l"    : 4,
+    "bdr-l"   : 6,
+    "addLogo" : true,
     "addPromo": false,
-    "topShad": false,
-    "shadLR": false,
+    "topShad" : false,
+    "shadLR"  : false,
     "shadLR_H": "1140",
-    "abspath": true
+    "abspath" : true
   },
   "url": {
     "bf": "no-def",
@@ -72,7 +73,7 @@
   "_comment": "",
   "gift": {
     "code": "XXXX",
-    "alt": ["", ""]
+    "alt" : ["", ""]
   },
   "prix": "..."
 }

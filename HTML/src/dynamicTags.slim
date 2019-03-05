@@ -7,13 +7,17 @@ ruby:
     # Renvoie interpolation var ruby #{}
     def arg(*arg)
       # "#{arg1}#{arg2}"
-      $objso["#{arg[0]}"]["#{arg[1]}"]
+      if arg.count == 1
+        $objso["#{arg[0]}"]
+      elsif arg.count == 2
+        $objso["#{arg[0]}"]["#{arg[1]}"]
+      end
     end
   end
 
 - $vr = Vrb.new
+- $dt = $vr.arg('date')
 - $tkc = $vr.arg('track','content')
-- $dt = $vr.arg('title','fr')
 
 
 ruby:

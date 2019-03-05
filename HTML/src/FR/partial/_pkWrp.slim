@@ -1,7 +1,6 @@
-/ table.mobile_320 width="636" border="0" cellpadding="0" cellspacing="0" align="center" style="margin: 0 auto;"
 *$tab.c0m320 class="m0auto"
   tr
-    td colspan="3" align="center"
+    *$td.acenter colspan="3"
       img.centw src==(($abspath == true ? $srcAbs : $srcRel)+"pkWrp_shad_top.png") width="636" alt=""
   tr
     / ext marges(6) + external gutter(4) = 10
@@ -14,10 +13,8 @@
           td
             *$tab.c0fullw
               tr
-                / td.pdt16.pdl10.pdb12.mob_nopdl valign="top"
                 td.pdt16.pdb12.pdl10.mob_nopdl.ffRobLight.fz30.mob_tac.color-prim valign="top"
                   | Actuellement dans votre panier :
-                  / img.cent src==(($abspath == true ? $srcAbs : $srcRel)+"s4_pktitle.png") alt=""
               tr
                 td
                   == Slim::Template.new('./src/FR/partial/_pk.slim').render
